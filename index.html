@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>jQuery Interactive Menu</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Ruby Zheng">
+	<script type="text/javascript" src="jquery-1.4.3.min.js"></script>
+	<script type="text/javascript" src="shmenu.jQuery.js"></script>	
+	<script type="text/javascript">
+		$(function(){
+		  $("#about").shmenu();			
+		  $("#one").shmenu();
+		  $("#two").shmenu();	
+		  $("#three").shmenu();
+		  $("#four").shmenu();
+		  // $(".section").imenu();					
+		});
+	</script>
+	<!-- Date: 2011-07-06 -->
+	<style type="text/css">
+		html,body{margin: auto; padding:0}
+		body{font: 76% arial,sans-serif}
+		#wrapper{ width: 600px; position: absolute; top: 0px;}
+		#menu{ position: fixed; padding: 10px; top: 0px; float: left; font-size: 24px;}
+		#menu li { list-style: none; }
+		#menu .selected { background: #FFC2CE; }
+		#content{ width: 50%; position: relative; float: right; padding: 10px; font-size: 14px;}
+		.section{padding: 5px;}
+	</style>
+		
+	<div id="wrapper">
+		<div id="menu">
+			<ul>
+				<li id='shmenu_about'><a href="#a">About</a></li>				
+				<li id='shmenu_one'><a href="#1">One</a></li>
+				<li id='shmenu_two'><a href="#2">Two</a></li>
+				<li id='shmenu_three'><a href="#3">Three</a></li>		
+				<li id='shmenu_four'><a href="#4">Four</a></li>						
+			</ul>
+		</div>
+		<div id="content">
+			<div class='section' id='about'>
+				<a name='a' />
+				<h2>About</h2>
+				<p>This is the demo for a jQuery Scroll Highlighted Menu plugin. How does it work? Well, every time you scroll to another section of the page, the plugin automatically updates the side menu to reflect that change.</p>
+				<p>It is pretty simple but I think it is a good way to interaction with users.</p>
+				<p><strong>Quick note</strong>: there are some holes in this plugin. Because actually calculate the scroll base on half of the bowser height, if the first & last content div height is smaller than half of the browser height, then it might not work properly. </p>					
+				<p>To use this, you'll need to include the latest jQuery file and the plugin - <a href="shmenu.jQuery.js">shmenu.jQuery.js</a> - in your code. The plugin function is $(id).imenu().</p>
+			</div>			
+			<div class='section' id='one'>
+				<a name='1' />
+				<h2>One</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas bibendum blandit quam et ullamcorper. Suspendisse scelerisque malesuada diam id porta. In porttitor purus at elit venenatis non suscipit augue bibendum. Cras ac tortor eu nulla luctus egestas nec sit amet felis. Phasellus quam elit, semper eu condimentum vitae, tristique sed mauris. Sed blandit blandit enim in fringilla. Nullam vulputate, nisi eu cursus varius, nunc mauris viverra nibh, vitae ornare erat urna non lectus. Aliquam mauris lorem, lobortis sed convallis quis, mattis nec turpis. Nulla erat lorem, posuere eget vehicula nec, varius vitae dolor. Mauris semper purus non justo egestas nec varius mi iaculis. Nullam vel lorem quis elit ullamcorper sagittis at in quam. Nullam suscipit, nulla ut ultrices dictum, dui justo suscipit mi, porta hendrerit risus magna nec erat. Nam mattis metus sit amet enim lobortis in aliquam velit convallis. Praesent eu est vel velit laoreet tristique. Donec imperdiet, urna in pellentesque euismod, sapien sem aliquam nibh, et tincidunt nibh tortor quis ligula. Aenean elit est, tincidunt et euismod et, malesuada a neque. Donec ornare viverra felis non ornare. Proin id ipsum enim, et sagittis est.</p>
+			</div>
+			<div class='section' id='two'>
+				<a name='2' />
+				<h2>Two</h2>				
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas bibendum blandit quam et ullamcorper. Suspendisse scelerisque malesuada diam id porta. In porttitor purus at elit venenatis non suscipit augue bibendum. Cras ac tortor eu nulla luctus egestas nec sit amet felis. Phasellus quam elit, semper eu condimentum vitae, tristique sed mauris. Sed blandit blandit enim in fringilla. Nullam vulputate, nisi eu cursus varius, nunc mauris viverra nibh, vitae ornare erat urna non lectus. Aliquam mauris lorem, lobortis sed convallis quis, mattis nec turpis. Nulla erat lorem, posuere eget vehicula nec, varius vitae dolor. Mauris semper purus non justo egestas nec varius mi iaculis. Nullam vel lorem quis elit ullamcorper sagittis at in quam. Nullam suscipit, nulla ut ultrices dictum, dui justo suscipit mi, porta hendrerit risus magna nec erat. Nam mattis metus sit amet enim lobortis in aliquam velit convallis. Praesent eu est vel velit laoreet tristique. Donec imperdiet, urna in pellentesque euismod, sapien sem aliquam nibh, et tincidunt nibh tortor quis ligula. Aenean elit est, tincidunt et euismod et, malesuada a neque. Donec ornare viverra felis non ornare. Proin id ipsum enim, et sagittis est.</p>
+			</div>	
+			<div class='section' id='three'>
+				<a name='3' />
+				<h2>Three</h2>				
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas bibendum blandit quam et ullamcorper. Suspendisse scelerisque malesuada diam id porta. In porttitor purus at elit venenatis non suscipit augue bibendum. Cras ac tortor eu nulla luctus egestas nec sit amet felis. Phasellus quam elit, semper eu condimentum vitae, tristique sed mauris. Sed blandit blandit enim in fringilla. Nullam vulputate, nisi eu cursus varius, nunc mauris viverra nibh, vitae ornare erat urna non lectus. Aliquam mauris lorem, lobortis sed convallis quis, mattis nec turpis. Nulla erat lorem, posuere eget vehicula nec, varius vitae dolor. Mauris semper purus non justo egestas nec varius mi iaculis. Nullam vel lorem quis elit ullamcorper sagittis at in quam. Nullam suscipit, nulla ut ultrices dictum, dui justo suscipit mi, porta hendrerit risus magna nec erat. Nam mattis metus sit amet enim lobortis in aliquam velit convallis. Praesent eu est vel velit laoreet tristique. Donec imperdiet, urna in pellentesque euismod, sapien sem aliquam nibh, et tincidunt nibh tortor quis ligula. Aenean elit est, tincidunt et euismod et, malesuada a neque. Donec ornare viverra felis non ornare. Proin id ipsum enim, et sagittis est.</p>
+			</div>	
+			<div class='section' id='four'>
+				<a name='4' />
+				<h2>Four</h2>				
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas bibendum blandit quam et ullamcorper. Suspendisse scelerisque malesuada diam id porta. In porttitor purus at elit venenatis non suscipit augue bibendum. Cras ac tortor eu nulla luctus egestas nec sit amet felis. Phasellus quam elit, semper eu condimentum vitae, tristique sed mauris. Sed blandit blandit enim in fringilla. Nullam vulputate, nisi eu cursus varius, nunc mauris viverra nibh, vitae ornare erat urna non lectus. Aliquam mauris lorem, lobortis sed convallis quis, mattis nec turpis. Nulla erat lorem, posuere eget vehicula nec, varius vitae dolor. Mauris semper purus non justo egestas nec varius mi iaculis. Nullam vel lorem quis elit ullamcorper sagittis at in quam. Nullam suscipit, nulla ut ultrices dictum, dui justo suscipit mi, porta hendrerit risus magna nec erat. Nam mattis metus sit amet enim lobortis in aliquam velit convallis. Praesent eu est vel velit laoreet tristique. Donec imperdiet, urna in pellentesque euismod, sapien sem aliquam nibh, et tincidunt nibh tortor quis ligula. Aenean elit est, tincidunt et euismod et, malesuada a neque. Donec ornare viverra felis non ornare. Proin id ipsum enim, et sagittis est.</p>
+			</div>							
+		</div>
+	</div>
+</head>
+<body>
+
+</body>
+</html>
